@@ -1,4 +1,4 @@
-**Data Source and Preparation**
+# **Data Source and Preparation**
 
 This project utilized the COVID-19 dataset sourced from  https://ourworldindata.org/covid-deaths.
 
@@ -13,12 +13,12 @@ Contains metrics related to testing, vaccinations, and various socioeconomic fac
 Both tables are joined using the location and date columns to perform the cumulative vaccination rate analysis within the SQL script.
 
 
-**Description**
+## **Description**
 
 This repository contains a robust SQL script (Covid Project.sql) that performs in-depth data analysis on two major COVID-19 datasets (CovidDeaths and CovidVaccinations). The project demonstrates key data manipulation techniques, including complex table joins, rolling aggregates, Common Table Expressions (CTEs), Temporary Tables, and the creation of SQL Views for downstream visualization tools (like Tableau or Power BI).
 
 
-**Key Analytical Areas**
+## **Key Analytical Areas**
 1. Mortality Rate: Calculating the fatality rate (Death Percentage) globally and per country.
 2. Infection Spread: Determining the percentage of the population infected over time.
 3. Vaccination Progress: Calculating the Rolling Count of people vaccinated and the percentage of the population that has received at least one dose.
@@ -26,19 +26,19 @@ This repository contains a robust SQL script (Covid Project.sql) that performs i
 5. Data Preparation: Final steps include creating a persistent View to make the complex analysis easily accessible for visualization tools.
 
 
-**Getting Started**
+## **Getting Started**
 
 The project was conducted on PostgreSQL and Excel.
 
 
-**Execution**
+## **Execution**
 1. Load Data: Ensure your database instance has the CovidDeaths and CovidVaccinations tables loaded.
 2. Execute the Script: Run the entire Covid Project.sql file in your database client.
 
 The script will execute a series of analytical queries, perform complex calculations, and most importantly, create a persistent SQL View named PercentPopulationVaccinated that holds the final, analyzed data set ready for visualization.
 
 
-**Detailed Project Steps (Insights)**
+## **Detailed Project Steps (Insights)**
 Here is the step-by-step breakdown of the analysis performed by Covid Project.sql:
 1. Initial Data Display: Displaying the first 5 contents of the CovidDeaths table (excluding continent aggregates).
 2. Mortality Rate Calculation (Kenya Example): Shows the likelihood (percentage) of dying from COVID-19 based on total cases.
